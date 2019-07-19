@@ -6,3 +6,23 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.char-btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.char-btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
