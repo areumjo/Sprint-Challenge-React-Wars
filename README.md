@@ -25,14 +25,27 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+    - React is a User Interface libarary that is used to create complex, rich, and responsive user experience
+    - React JS can handle complex state (data) upon user's activity, so user can have dynamic state change without refreshing web page 
+        - Think about facebook or reddit. User can get friend's data (posting or image) endlessly, it doesn't even require to click to go to next page.
 
 - [ ] What does it mean to _think_ in react?
+    - One of most important concept in React is building reusable component. Break UI design into a component hierarchy. In this architecture, you can pass `props` to a child component and update `state` eventually display to parent component.
 
 - [ ] Describe state.
+    - `State` keeps track of a state variable from within a component and state can be changed, updated, or removed. State determines which component renders and behaves.
 
 - [ ] Describe props.
+    - `Props` is short for "properties" and can be passed into the component
+    - While props and state both hold information relating to the component, `props` contains information set by the parent component (although defaults can be set) and should not be changed.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    - Anything that afftects someting outside the scope of the function being executed. For instance, 
+        - fetching data from API
+        - timer
+        - logging in and out
+        - manually manipulating DOM
+    - Use `useEffect`, `useState` to manage side effects. It will tellt react that a component needs to run/execute some side effect and access to state, props, and local variables.
 
 ## Project Set Up
 
