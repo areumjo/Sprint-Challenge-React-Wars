@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Character from "./components/Character.js";
+import Footer from "./components/Footer.js";
 
 import axios from "axios";
 
@@ -27,7 +28,10 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {characters.map( e => <Character charName={e.name} charHeight={e.height} charMass={e.mass} charEyeColor={e.eye_color} charBirthYear={e.birth_year}/>)}
+      <div className="flex-container">
+        {characters.map( e => <Character charName={e.name} charHeigth={e.height} charMass={e.mass} charEyeColor={e.eye_color} charBirthYear={e.birth_year}/>)}
+      </div>
+      <Footer />
     </div>
   );
 }

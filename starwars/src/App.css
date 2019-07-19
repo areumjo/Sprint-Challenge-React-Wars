@@ -7,9 +7,9 @@
 }
 /* write your parent styles in here for your App.js */
 
-/* .character-container {
+.flex-container {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-} */
+}
