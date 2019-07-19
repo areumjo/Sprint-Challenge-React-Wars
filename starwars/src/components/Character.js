@@ -24,12 +24,11 @@ function Character(props) {
         padding: 1em 1em;
         border-radius: 50%;
     `;
-    console.log(props);
     return (
         <WrapperDiv>
             <p>Say hi to</p>
             <H3>{props.charName}</H3><hr/>
-            <p>Born is {props.charBirthYear}</p>
+            <p>Born in {props.charBirthYear}</p>
             <p>Heigth: {props.charHeigth}</p>
             <p>Mass: {props.charMass}</p>
             <div className="flex-container">
