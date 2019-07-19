@@ -13,3 +13,16 @@
   justify-content: center;
   flex-flow: row wrap;
 }
+
+.char-btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.char-btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}

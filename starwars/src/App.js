@@ -32,7 +32,6 @@ const App = () => {
     axios
       .get(`https://swapi.co/api/people/${char}`)
       .then(response => {
-        console.log(response.data);
         const characters = response.data.results;
         setCharacters(characters);
       })
@@ -41,10 +40,12 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <button
-        onClick={() => prevCharacter(prev, prevChar)}>Previous</button>
-      <button
+      <div>
+        <button className="char-btn"
+          onClick={() => prevCharacter(prev, prevChar)}>Previous</button>
+        <button className="char-btn"
         onClick={() => nextCharacter(next, nextChar)}>Next</button>
+      </div>
       <div className="flex-container">
         {characters.map( e => <Character charName={e.name} charHeigth={e.height} charMass={e.mass} charEyeColor={e.eye_color} charBirthYear={e.birth_year}/>)}
       </div>
