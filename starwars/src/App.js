@@ -24,11 +24,10 @@ const App = () => {
       })
       .catch(err => console.log('SWAPI is down: ', err))
   }, []);
-  console.log(characters[1]);
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {characters.map( e => <Character charName={e.name}/>)}
+      {characters.map( e => <Character charName={e.name} charHeight={e.height} charMass={e.mass} charEyeColor={e.eye_color} charBirthYear={e.birth_year}/>)}
     </div>
   );
 }
