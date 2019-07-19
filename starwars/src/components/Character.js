@@ -2,12 +2,17 @@ import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 
 const WrapperDiv = styled.div`
-    width: 400px;
+    width: 300px;
     border-radius: 10%;
     background-color: rgba(255, 255, 255, .5);
     margin: 20px;
     padding: 20px;
 `;
+
+const H3 = styled.h3`
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #fff;
+`
 
 function Character(props) {
     const Button = styled.button`
@@ -23,7 +28,7 @@ function Character(props) {
     return (
         <WrapperDiv>
             <p>Say hi to</p>
-            <h3>{props.charName}</h3><hr/>
+            <H3>{props.charName}</H3><hr/>
             <p>Born is {props.charBirthYear}</p>
             <p>Heigth: {props.charHeigth}</p>
             <p>Mass: {props.charMass}</p>
